@@ -19,12 +19,14 @@ print(str1[5:])
 print(str1[:13])
 print(str1[:])
 print(str1[5:12])
+# :13是指在13前的那一個位置
 
 
 print("{0} {1}".format(100, 200))
 print("num1: {0} num2:{1}".format(a, b))
 print("{0:10}{1:10}".format(200, 300))
 print("{0:<7}{1:<7}{2:<7}"format(12345, 456, 9998))
+#<是往左對齊，7是7個字元
 
 s = "stone campus"
 # 這個字串的長度
