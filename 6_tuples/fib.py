@@ -6,7 +6,7 @@ def fib(n):
     a = 0
     b = 1 
     for i in range(1, n):
-        #這一次的a等於上一次的b，這一次的b等於上一次的a+b
+        #同時assign兩種東西（python中tuple的寫法），代表這一次的a等於上一次的b，這一次的b等於上一次的a+b
         a, b = b, a+b
     return b 
 
@@ -14,7 +14,7 @@ print(fib(3))
 print(fib(5))
 print(fib(7))
 
-#沒有tuple的寫法
+#沒有tuple的寫法，一般需要一個c來暫存
 def fib2(n):
     a = 0
     b = 1
