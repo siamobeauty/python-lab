@@ -1,12 +1,13 @@
 ages = {}
 def prAge(name):
+    # ages.get可以拿到ages裡面的東西
     if ages.get(name):
         print(name, ages.get(name))
     else:
         print("N/A")
 
 def test():
-    #input()的意思是吃到換行，所以在input1裡面吃到3，放進去num裡面
+    #input()的意思是吃到換行，所以在input1裡面吃到3，轉成數字放進去num裡面
     num = int(input())
     #連吃三行，從0吃到第一個迴圈是
     for i in range(0, num):
